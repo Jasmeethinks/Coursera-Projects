@@ -81,15 +81,17 @@ h1 {
   #chicken,
   #beef,
   #sushi {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   #chicken {
-    margin-bottom: 3%;
+    margin-bottom: 1.5%;
   }
   #beef {
+    margin-bottom: 1.5%;
+  }
+  #sushi {
     margin-bottom: 3%;
   }
 }
@@ -98,6 +100,7 @@ h1 {
   #chicken,
   #beef {
     width: 45.5%;
+    margin-bottom: 1.5%;
   }
 
   #sushi {
