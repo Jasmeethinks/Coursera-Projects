@@ -1,0 +1,325 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background:#000000;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+/** HEADER **/
+.container {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Navbar background and shadow */
+#header-nav {
+  background-color: #2d0000;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none; /* optional: removes the focus outline */
+}
+
+/* Brand heading */
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  background: linear-gradient(#9d7236, #b69050, #d9b97c); /* rich golden gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navbar toggle button */
+.navbar-toggle {
+  background-color: #B69050;
+  border: none;
+  margin-top: 10px;
+}
+
+
+/* Nav link list */
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list > li {
+  margin-left: 30px;
+}
+
+#nav-list a {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #B69050;
+}
+
+#nav-list a:hover,
+#nav-list a:focus {
+  -webkit-text-fill-color: #fff;
+  background: none;
+  text-decoration: none;
+}
+
+/* Responsive collapse tweak */
+.navbar-header button.navbar-toggle {
+  margin-right: 15px;
+}
+
+
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 40px;
+  padding: 50px 20px 40px;
+  background-color: #2d0000; /* Deep maroon to match navbar */
+  border-top: none;
+  color: #f2e6d9; /* Warm ivory text for elegance */
+  font-family: 'Lora', serif;
+}
+
+.panel-footer .row {
+  margin-bottom: 40px;
+}
+
+.panel-footer h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ffcc00, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hours, #address, #testimonials {
+  line-height: 2;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+#hours span, #address span, #testimonials {
+  color: #B69050;
+}
+#address p {
+  font-size: 0.95em;
+  line-height: 1.8;
+  color: #d4e6a5;
+}
+
+#testimonials {
+  margin-top: 25px;
+  font-style: normal;
+  font-style: italic;
+  font-weight: 500;
+  color: #B69050;
+}
+
+/* Optional: subtle separator line on top */
+.panel-footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #B69050, transparent);
+  margin-bottom: 40px;
+}
+
+
+/* === ABOUT SECTION === */
+#about {
+  padding: 60px 20px;
+  background-color: #1a0000;
+  border-top: 2px solid #ffbc42;
+  border-bottom: 2px solid #ff7e5f;
+  color: #fff;
+  font-family: 'Lora', serif;
+}
+
+#about .section-title {
+  font-size: 2.8em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #ffbc42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+#about .section-divider {
+  width: 80px;
+  height: 4px;
+  margin: 0 auto 30px auto;
+  background: linear-gradient(to right, #ff7e5f, #ffbc42);
+  border: none;
+  border-radius: 10px;
+}
+
+#about .lead {
+  font-size: 1.2em;
+  color: #ddd;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
+}
+
+#about img {
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 188, 66, 0.25);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+#about img:hover {
+  transform: scale(1.02);
+}
+
+#about p {
+  color: #f1f1f1;
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.row p {
+	text-align: justify;
+	margin-right: 20px;
+}
+
+p.lead {
+	text-align: center;
+}
+@media (max-width: 768px) {
+  #about {
+    text-align: center;
+  }
+
+  #about img {
+    margin: 0 auto 20px auto;
+  }
+}
+
+
+/* === GALLERY SECTION === */
+#gallery {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Lora', serif;
+}
+
+#gallery .section-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #ffbc42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+#gallery .section-divider {
+  width: 80px;
+  height: 4px;
+  margin: 30px auto 30px auto;
+  background: linear-gradient(to right, #ff7e5f, #ffbc42);
+  border: none;
+  border-radius: 10px;
+  border-color: black;
+}
+
+/* Gallery Images */
+#gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 8px 20px rgba(255, 188, 66, 0.1);
+}
+
+/* Add spacing between images */
+#gallery [class^="col-"] {
+  padding: 10px;
+}
+
+/* Hover Glow Effect */
+#gallery img:hover {
+  box-shadow: 0 0 10px 10px rgba(255, 188, 66, 0.4);
+  transform: scale(1.02);
+}
+
+/* Remove default thumbnail borders */
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 8px 20px rgba(255, 188, 66, 0.1);
+  border: 4px solid transparent;
+
+  /* Subtle yellow-gold gradient border */
+  background-image: 
+    linear-gradient(#000, #000), 
+    linear-gradient(90deg, rgba(255, 188, 66, 0.3), rgba(255, 126, 95, 0.3));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+
+@media (max-width: 768px) {
+  a.navbar-brand {
+    margin-left: 30px;
+  }
+
+  div.navbar-brand {
+    margin-left: 30px;
+  }
+
+  #main-content {
+    padding: 40px 15px;
+  }
+
+  #main-content h2 {
+    font-size: 2em;
+  }
+
+  .menu-category h3 {
+    font-size: 1.5em;
+  }
+
+  .menu-category li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+.navbar-toggle {
+    color: black;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+  }
+
+
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reservations - Papa Louie's Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reservations-css.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700|Lora" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <h1>Papa Louie's Pizzeria</h1>
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">
+                <br class="hidden-xs"> Home</a>
+            </li>
+            <li>
+              <a href="about.html">
+                <br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="menu.html">
+                <br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#hours">
+                <br class="hidden-xs"> Contact</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+        </div>
+      </nav>
+    </header>
+
+    <div id="main-content" class="container">
+      <h2 class="text-center">Reserve a Table</h2>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="tel" class="form-control" id="contact" required>
+        </div>
+        <div class="form-group">
+          <label for="table-number">Table Number (1–20):</label>
+          <select class="form-control" id="table-number" required>
+            <!-- Tables for 2 -->
+            <optgroup label="Tables for 2">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+            </optgroup>
+            <optgroup label="Tables for 4">
+              <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
+            </optgroup>
+            <optgroup label="Tables for 6">
+              <option>15</option><option>16</option><option>17</option><option>18</option>
+            </optgroup>
+            <optgroup label="Tables for 8">
+              <option>19</option><option>20</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="datetime">Date & Time:</label>
+          <input type="datetime-local" class="form-control" id="datetime" required>
+        </div>
+        <button type="submit" class="btn btn-custom">Reserve Table</button>
+      </form>
+    </div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+            Sun-Thurs: 11:15am - 10:00pm<br>
+            Fri: 11:15am - 2:30pm<br>
+            Saturday Closed <br>
+            <hr class="visible-xs">
+            <span><br>Contact:</span><br>
+            contact@papalouie.com<br>
+            +91 7666111711
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            The Club Mumbai<br>
+            Shanti Nagar, D.N.Nagar<br>
+            Andheri West, Mumbai 400053<br>
+            <br><p>Delivery area within 3-4 kilometers, <br> with minimum order of Rs.500 plus <br> Rs.50 charge for all deliveries.</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>"The best authentic Italian restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+            <p><br>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright Papa Louie's Pizzeria 2025</div>
+      </div>
+    </footer>
+
+
+    <script>
+      document.getElementById('reservation-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert("Reservation submitted! We’ll get back to you soon.");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
